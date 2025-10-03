@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppliers CRUD</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select { width: 100%; padding: 8px; }
+        button { background-color: #4a90e2; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<h2>Register Portal</h2>
+<form action="/register" method="POST">
+    <input type="hidden" id="action" name="action" value="register">
+    <div class="form-group">
+        <label for="username">User Name* : </label>
+        <input type="text" id="username" name="User Name" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Password* : </label>
+        <input type="password" id="password" name="Password" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email* : </label>
+        <input type="email" id="email" name="Email" required>
+    </div>
+    <div class="form-group">
+        <label for="firstname">First Name* : </label>
+        <input type="text" id="firstname" name="First Name" required>
+    </div>
+    <div class="form-group">
+        <label for="lastname">Last Name* : </label>
+        <input type="text" id="lastname" name="Last Name" required>
+    </div>
+    <div class="form-group">
+        <label for="phone_number">Phone Number : </label>
+        <input type="tel" id="phone_number" name="Phone Number">
+    </div>
+    <div class="form-group">
+        <label for="address">Address* : </label>
+        <input type="text" id="address" name="Address" required>
+    </div>
+    <div class="form-group">
+        <label for="role">Role* : </label>
+        <select id="role" name="Role" required>
+            <option value="Customer">Customer</option>
+            <option value="Supplier">Supplier</option>
+        </select>
+    </div>
+    <button id="register" type="submit">Register</button>
+</form>
+<script>
+    function updateSupplier() {
+        alert("Update Supplier function to be implemented");
+    }
+    function deleteSupplier() {
+        alert("Delete Supplier function to be implemented");
+    }
+</script>
+</body>
+</html>

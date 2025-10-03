@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Goods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #1a2a44;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .footer {
+            background-color: #1a2a44;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            font-size: 14px;
+        }
+        .footer div {
+            flex: 1;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .social-icons img {
+            width: 24px;
+            margin-right: 10px;
+        }
+        .dashboard {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .dashboard h2 {
+            color: #1a2a44;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 23%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin: 0;
+            color: #1a2a44;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .table th, .table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .cta-section {
+            background: linear-gradient(to right, #4a90e2, #6b48ff);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .cta-section h2 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .cta-section button {
+            background-color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .features {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .features h2 {
+            color: #1a2a44;
+        }
+        .feature-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .feature-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div>
+        <h1>Southern Goods</h1>
+        <p>Pvt Ltd</p>
+    </div>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="html/inventory.html">Inventory</a>
+        <a href="html/orders.html">Orders</a>
+        <a href="html/reports.html">Reports</a>
+        <button style="background-color: #4a90e2; color: white; border: none; padding: 10px 20px; border-radius: 5px;">Login</button>
+    </nav>
+</div>
+
+<div class="dashboard">
+    <h2>Live Dashboard Preview</h2>
+    <p style="color: #666;">See your inventory management system in action with real-time data and insights</p>
+    <div class="cards">
+        <div class="card">
+            <h3>Live Stock Count</h3>
+            <p>12,847 <span style="color: green;">+5.2%</span></p>
+        </div>
+        <div class="card">
+            <h3>Low Stock Alerts</h3>
+            <p>23 <span style="color: red;">↓12%</span></p>
+        </div>
+        <div class="card">
+            <h3>Expected Arrivals</h3>
+            <p>8 <span style="color: green;">+2 today</span></p>
+        </div>
+    </div>
+    <div style="margin-top: 20px;">
+        <h3>Recent Inventory Updates</h3>
+        <table class="table">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Premium Rice 10kg</td>
+                <td>245</td>
+                <td style="background-color: #e6ffe6;">In Stock</td>
+                <td><button style="background-color: #4a90e2; color: white; border: none; padding: 5px 10px; border-radius: 5px;">📝</button></td>
+            </tr>
+            <tr>
+                <td>Organic Lentils 5kg</td>
+                <td>189</td>
+                <td style="background-color: #fff3cd;">Low Stock</td>
+                <td><button style="background-color: #4a90e2; color: white; border: none; padding: 5px 10px; border-radius: 5px;">📝</button></td>
+            </tr>
+            <tr>
+                <td>Cooking Oil 1L</td>
+                <td>356</td>
+                <td style="background-color: #e6ffe6;">In Stock</td>
+                <td><button style="background-color: #4a90e2; color: white; border: none; padding: 5px 10px; border-radius: 5px;">📝</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div style="display: flex; margin: 20px;">
+    <div class="card" style="width: 50%; margin-right: 20px;">
+        <h3>Delivery Schedule</h3>
+        <p><span style="color: #4a90e2;">● Rice Shipment</span> Expected: Today 2:00 PM</p>
+        <p><span style="color: #28a745;">● Oil Delivery</span> Expected: Tomorrow 10:00 AM</p>
+        <p><span style="color: #ffc107;">● Flour Stock</span> Ordered: Dec 28</p>
+    </div>
+    <div class="card" style="width: 50%;">
+        <h3>Quick Stats</h3>
+        <p>Total Categories: 24</p>
+        <p>Active Suppliers: 12</p>
+        <p>Pending Orders: 8</p>
+        <p>Monthly Revenue: ₹4,56,789</p>
+    </div>
+</div>
+
+<div class="cta-section">
+    <h2>Ready to Transform Your Inventory Management?</h2>
+    <p>Join thousands of businesses already using our smart inventory system to streamline their operations.</p>
+    <button>Start Free Trial</button>
+    <button>Schedule Demo</button>
+</div>
+
+<div class="features">
+    <h2>Powerful Features for Complete Control</h2>
+    <p style="color: #666;">Everything you need to manage your inventory efficiently, from real-time tracking to advanced analytics and reporting.</p>
+    <div class="feature-cards">
+        <div class="feature-card">
+            <h3>Real-Time Dashboard</h3>
+            <p>Monitor inventory levels, sales metrics, and alerts in real-time with interactive charts and analytics.</p>
+            <a href="#" style="color: #4a90e2;">Learn More →</a>
+        </div>
+        <div class="feature-card">
+            <h3>Barcode Scanning</h3>
+            <p>Streamline operations with integrated barcode scanning for quick product identification and tracking.</p>
+            <a href="#" style="color: #4a90e2;">Learn More →</a>
+            ?</div>
+        <div class="feature-card">
+            <h3>Order Management</h3>
+            <p>Automate purchase orders, track deliveries, and manage supplier relationships efficiently.</p>
+            <a href="#" style="color: #4a90e2;">Learn More →</a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div>
+        <p>Southern Goods</p>
+        <p>Advanced inventory management system designed for modern businesses. Streamline your operations with real-time tracking and intelligent analytics.</p>
+        <div class="social-icons">
+            <img src="https://via.placeholder.com/24" alt="Facebook">
+            <img src="https://via.placeholder.com/24" alt="Twitter">
+            <img src="https://via.placeholder.com/24" alt="LinkedIn">
+            <img src="https://via.placeholder.com/24" alt="Instagram">
+        </div>
+    </div>
+    <div>
+        <p>Quick Links</p>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Support</a>
+        <a href="#">Documentation</a>
+    </div>
+    <div>
+        <p>Company</p>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+        <p>Made with Readdy</p>
+    </div>
+    <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+    </div>
+    <p style="text-align: center; width: 100%;">© 2024 Southern Goods Pvt Ltd. All rights reserved.</p>
+</div>
+</body>
+</html>

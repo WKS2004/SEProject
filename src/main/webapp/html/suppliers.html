@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppliers CRUD</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select { width: 100%; padding: 8px; }
+        button { background-color: #4a90e2; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<h2>Suppliers Management</h2>
+<form>
+    <div class="form-group">
+        <label for="supplierName">Supplier Name</label>
+        <input type="text" id="supplierName" name="supplierName" required>
+    </div>
+    <div class="form-group">
+        <label for="contact">Contact</label>
+        <input type="text" id="contact" name="contact" required>
+    </div>
+    <div class="form-group">
+        <label for="status">Status</label>
+        <select id="status" name="status" required>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select>
+    </div>
+    <button type="submit">Create</button>
+    <button type="button" onclick="updateSupplier()">Update</button>
+    <button type="button" onclick="deleteSupplier()">Delete</button>
+</form>
+<script>
+    function updateSupplier() {
+        alert("Update Supplier function to be implemented");
+    }
+    function deleteSupplier() {
+        alert("Delete Supplier function to be implemented");
+    }
+</script>
+</body>
+</html>
